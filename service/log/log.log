@@ -1,0 +1,881 @@
+2019-06-24 17:30:40  [ main:0 ] - [ INFO ]  using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2019-06-24 17:30:40  [ main:104 ] - [ INFO ]  MLog clients using log4j logging.
+2019-06-24 17:30:42  [ main:1656 ] - [ INFO ]  Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2019-06-24 17:30:42  [ main:1689 ] - [ DEBUG ]  MBean: com.mchange.v2.c3p0:type=PooledDataSource[2rwcn5a311yosntvryv2h|a3d8174] registered.
+2019-06-24 17:30:42  [ main:2251 ] - [ DEBUG ]  incremented pending_acquires: 1
+2019-06-24 17:30:42  [ main:2251 ] - [ DEBUG ]  incremented pending_acquires: 2
+2019-06-24 17:30:42  [ main:2252 ] - [ DEBUG ]  incremented pending_acquires: 3
+2019-06-24 17:30:42  [ main:2252 ] - [ DEBUG ]  com.mchange.v2.resourcepool.BasicResourcePool@8dbfffb config: [start -> 3; min -> 3; max -> 15; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+2019-06-24 17:30:42  [ main:2253 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 2rwcn5a311yosntvryv2h|a3d8174, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2rwcn5a311yosntvryv2h|a3d8174, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/report?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2019-06-24 17:30:42  [ main:2254 ] - [ DEBUG ]  acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2019-06-24 17:30:42  [ main:2254 ] - [ DEBUG ]  awaitAvailable(): [unknown]
+2019-06-24 17:30:42  [ main:2254 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@8dbfffb [managed: 0, unused: 0, excluded: 0]
+2019-06-24 17:30:44  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:3699 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@11fa9b77.acquireResource() returning. 
+2019-06-24 17:30:44  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:3699 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@11fa9b77.acquireResource() returning. 
+2019-06-24 17:30:44  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:3699 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@11fa9b77.acquireResource() returning. 
+2019-06-24 17:30:44  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:3699 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@8dbfffb [managed: 1, unused: 1, excluded: 0]
+2019-06-24 17:30:44  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:3700 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@8dbfffb [managed: 2, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@36742738)
+2019-06-24 17:30:44  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:3700 ] - [ DEBUG ]  decremented pending_acquires: 2
+2019-06-24 17:30:44  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:3701 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@8dbfffb [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@36742738)
+2019-06-24 17:30:44  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:3701 ] - [ DEBUG ]  decremented pending_acquires: 1
+2019-06-24 17:30:44  [ main:3701 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@8dbfffb [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@36742738)
+2019-06-24 17:30:44  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:3701 ] - [ DEBUG ]  decremented pending_acquires: 0
+2019-06-24 17:30:44  [ main:3817 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@8dbfffb [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@36742738)
+2019-06-24 17:30:45  [ main:4468 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@8dbfffb [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@36742738)
+2019-06-24 17:30:45  [ main:4511 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.NewPooledConnection@4c8d3104 handling a throwable.
+java.sql.SQLSyntaxErrorException: Table 'cell_info' already exists
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:782)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:666)
+	at com.mchange.v2.c3p0.impl.NewProxyStatement.execute(NewProxyStatement.java:1006)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.applySqlString(SchemaMigratorImpl.java:568)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.applySqlStrings(SchemaMigratorImpl.java:552)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.createTable(SchemaMigratorImpl.java:340)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.performMigration(SchemaMigratorImpl.java:252)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.doMigration(SchemaMigratorImpl.java:132)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.doMigration(SchemaMigratorImpl.java:105)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:176)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:65)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:459)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:711)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:727)
+	at org.springframework.orm.hibernate5.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:615)
+	at org.springframework.orm.hibernate5.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:826)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:144)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:95)
+	at com.report.service.impl.TableContentServiceImplTest.setUp(TableContentServiceImplTest.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2019-06-24 17:30:45  [ main:4516 ] - [ DEBUG ]  Attempted to convert SQLException to SQLException. Leaving it alone. [SQLState: 42S01; errorCode: 1050]
+java.sql.SQLSyntaxErrorException: Table 'cell_info' already exists
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:782)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:666)
+	at com.mchange.v2.c3p0.impl.NewProxyStatement.execute(NewProxyStatement.java:1006)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.applySqlString(SchemaMigratorImpl.java:568)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.applySqlStrings(SchemaMigratorImpl.java:552)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.createTable(SchemaMigratorImpl.java:340)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.performMigration(SchemaMigratorImpl.java:252)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.doMigration(SchemaMigratorImpl.java:132)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.doMigration(SchemaMigratorImpl.java:105)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:176)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:65)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:459)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:711)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:727)
+	at org.springframework.orm.hibernate5.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:615)
+	at org.springframework.orm.hibernate5.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:826)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:144)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:95)
+	at com.report.service.impl.TableContentServiceImplTest.setUp(TableContentServiceImplTest.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2019-06-24 17:30:45  [ main:4519 ] - [ DEBUG ]  Testing a Connection in response to an Exception:
+java.sql.SQLSyntaxErrorException: Table 'cell_info' already exists
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:782)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:666)
+	at com.mchange.v2.c3p0.impl.NewProxyStatement.execute(NewProxyStatement.java:1006)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.applySqlString(SchemaMigratorImpl.java:568)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.applySqlStrings(SchemaMigratorImpl.java:552)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.createTable(SchemaMigratorImpl.java:340)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.performMigration(SchemaMigratorImpl.java:252)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.doMigration(SchemaMigratorImpl.java:132)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.doMigration(SchemaMigratorImpl.java:105)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:176)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:65)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:459)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:711)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:727)
+	at org.springframework.orm.hibernate5.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:615)
+	at org.springframework.orm.hibernate5.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:826)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:144)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:95)
+	at com.report.service.impl.TableContentServiceImplTest.setUp(TableContentServiceImplTest.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2019-06-24 17:30:45  [ main:4532 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.NewPooledConnection@4c8d3104 handling a throwable.
+java.sql.SQLSyntaxErrorException: Table 'reference_info' already exists
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:782)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:666)
+	at com.mchange.v2.c3p0.impl.NewProxyStatement.execute(NewProxyStatement.java:1006)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.applySqlString(SchemaMigratorImpl.java:568)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.applySqlStrings(SchemaMigratorImpl.java:552)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.createTable(SchemaMigratorImpl.java:340)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.performMigration(SchemaMigratorImpl.java:252)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.doMigration(SchemaMigratorImpl.java:132)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.doMigration(SchemaMigratorImpl.java:105)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:176)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:65)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:459)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:711)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:727)
+	at org.springframework.orm.hibernate5.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:615)
+	at org.springframework.orm.hibernate5.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:826)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:144)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:95)
+	at com.report.service.impl.TableContentServiceImplTest.setUp(TableContentServiceImplTest.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2019-06-24 17:30:45  [ main:4533 ] - [ DEBUG ]  Attempted to convert SQLException to SQLException. Leaving it alone. [SQLState: 42S01; errorCode: 1050]
+java.sql.SQLSyntaxErrorException: Table 'reference_info' already exists
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:782)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:666)
+	at com.mchange.v2.c3p0.impl.NewProxyStatement.execute(NewProxyStatement.java:1006)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.applySqlString(SchemaMigratorImpl.java:568)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.applySqlStrings(SchemaMigratorImpl.java:552)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.createTable(SchemaMigratorImpl.java:340)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.performMigration(SchemaMigratorImpl.java:252)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.doMigration(SchemaMigratorImpl.java:132)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.doMigration(SchemaMigratorImpl.java:105)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:176)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:65)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:459)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:711)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:727)
+	at org.springframework.orm.hibernate5.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:615)
+	at org.springframework.orm.hibernate5.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:826)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:144)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:95)
+	at com.report.service.impl.TableContentServiceImplTest.setUp(TableContentServiceImplTest.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2019-06-24 17:30:45  [ main:4534 ] - [ DEBUG ]  Testing a Connection in response to an Exception:
+java.sql.SQLSyntaxErrorException: Table 'reference_info' already exists
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:782)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:666)
+	at com.mchange.v2.c3p0.impl.NewProxyStatement.execute(NewProxyStatement.java:1006)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.applySqlString(SchemaMigratorImpl.java:568)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.applySqlStrings(SchemaMigratorImpl.java:552)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.createTable(SchemaMigratorImpl.java:340)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.performMigration(SchemaMigratorImpl.java:252)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.doMigration(SchemaMigratorImpl.java:132)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.doMigration(SchemaMigratorImpl.java:105)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:176)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:65)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:459)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:711)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:727)
+	at org.springframework.orm.hibernate5.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:615)
+	at org.springframework.orm.hibernate5.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:826)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:144)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:95)
+	at com.report.service.impl.TableContentServiceImplTest.setUp(TableContentServiceImplTest.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2019-06-24 17:30:45  [ main:4541 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.NewPooledConnection@4c8d3104 handling a throwable.
+java.sql.SQLSyntaxErrorException: Table 'table_info' already exists
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:782)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:666)
+	at com.mchange.v2.c3p0.impl.NewProxyStatement.execute(NewProxyStatement.java:1006)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.applySqlString(SchemaMigratorImpl.java:568)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.applySqlStrings(SchemaMigratorImpl.java:552)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.createTable(SchemaMigratorImpl.java:340)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.performMigration(SchemaMigratorImpl.java:252)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.doMigration(SchemaMigratorImpl.java:132)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.doMigration(SchemaMigratorImpl.java:105)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:176)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:65)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:459)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:711)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:727)
+	at org.springframework.orm.hibernate5.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:615)
+	at org.springframework.orm.hibernate5.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:826)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:144)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:95)
+	at com.report.service.impl.TableContentServiceImplTest.setUp(TableContentServiceImplTest.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2019-06-24 17:30:45  [ main:4543 ] - [ DEBUG ]  Attempted to convert SQLException to SQLException. Leaving it alone. [SQLState: 42S01; errorCode: 1050]
+java.sql.SQLSyntaxErrorException: Table 'table_info' already exists
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:782)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:666)
+	at com.mchange.v2.c3p0.impl.NewProxyStatement.execute(NewProxyStatement.java:1006)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.applySqlString(SchemaMigratorImpl.java:568)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.applySqlStrings(SchemaMigratorImpl.java:552)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.createTable(SchemaMigratorImpl.java:340)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.performMigration(SchemaMigratorImpl.java:252)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.doMigration(SchemaMigratorImpl.java:132)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.doMigration(SchemaMigratorImpl.java:105)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:176)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:65)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:459)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:711)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:727)
+	at org.springframework.orm.hibernate5.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:615)
+	at org.springframework.orm.hibernate5.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:826)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:144)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:95)
+	at com.report.service.impl.TableContentServiceImplTest.setUp(TableContentServiceImplTest.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2019-06-24 17:30:45  [ main:4544 ] - [ DEBUG ]  Testing a Connection in response to an Exception:
+java.sql.SQLSyntaxErrorException: Table 'table_info' already exists
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:782)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:666)
+	at com.mchange.v2.c3p0.impl.NewProxyStatement.execute(NewProxyStatement.java:1006)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.applySqlString(SchemaMigratorImpl.java:568)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.applySqlStrings(SchemaMigratorImpl.java:552)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.createTable(SchemaMigratorImpl.java:340)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.performMigration(SchemaMigratorImpl.java:252)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.doMigration(SchemaMigratorImpl.java:132)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.doMigration(SchemaMigratorImpl.java:105)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:176)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:65)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:459)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:711)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:727)
+	at org.springframework.orm.hibernate5.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:615)
+	at org.springframework.orm.hibernate5.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:826)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:144)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:95)
+	at com.report.service.impl.TableContentServiceImplTest.setUp(TableContentServiceImplTest.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2019-06-24 17:30:45  [ main:4620 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@8dbfffb [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@36742738)
+2019-06-24 17:30:45  [ main:4986 ] - [ DEBUG ]   [DUBBO] package com.alibaba.dubbo.rpc;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class Protocol$Adaptive implements com.alibaba.dubbo.rpc.Protocol {
+public void destroy() {throw new UnsupportedOperationException("method public abstract void com.alibaba.dubbo.rpc.Protocol.destroy() of interface com.alibaba.dubbo.rpc.Protocol is not adaptive method!");
+}
+public int getDefaultPort() {throw new UnsupportedOperationException("method public abstract int com.alibaba.dubbo.rpc.Protocol.getDefaultPort() of interface com.alibaba.dubbo.rpc.Protocol is not adaptive method!");
+}
+public com.alibaba.dubbo.rpc.Invoker refer(java.lang.Class arg0, com.alibaba.dubbo.common.URL arg1) throws com.alibaba.dubbo.rpc.RpcException {
+if (arg1 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg1;
+String extName = ( url.getProtocol() == null ? "dubbo" : url.getProtocol() );
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.rpc.Protocol) name from url(" + url.toString() + ") use keys([protocol])");
+com.alibaba.dubbo.rpc.Protocol extension = (com.alibaba.dubbo.rpc.Protocol)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.rpc.Protocol.class).getExtension(extName);
+return extension.refer(arg0, arg1);
+}
+public com.alibaba.dubbo.rpc.Exporter export(com.alibaba.dubbo.rpc.Invoker arg0) throws com.alibaba.dubbo.rpc.RpcException {
+if (arg0 == null) throw new IllegalArgumentException("com.alibaba.dubbo.rpc.Invoker argument == null");
+if (arg0.getUrl() == null) throw new IllegalArgumentException("com.alibaba.dubbo.rpc.Invoker argument getUrl() == null");com.alibaba.dubbo.common.URL url = arg0.getUrl();
+String extName = ( url.getProtocol() == null ? "dubbo" : url.getProtocol() );
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.rpc.Protocol) name from url(" + url.toString() + ") use keys([protocol])");
+com.alibaba.dubbo.rpc.Protocol extension = (com.alibaba.dubbo.rpc.Protocol)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.rpc.Protocol.class).getExtension(extName);
+return extension.export(arg0);
+}
+}, dubbo version: 2.6.6, current host: 10.0.75.1
+2019-06-24 17:30:45  [ main:4992 ] - [ WARN ]   [DUBBO] No spring extension (bean) named:defaultCompiler, try to find an extension (bean) of type java.lang.String, dubbo version: 2.6.6, current host: 10.0.75.1
+2019-06-24 17:30:45  [ main:4992 ] - [ WARN ]   [DUBBO] No spring extension (bean) named:defaultCompiler, type:java.lang.String found, stop get bean., dubbo version: 2.6.6, current host: 10.0.75.1
+2019-06-24 17:30:45  [ main:5056 ] - [ DEBUG ]   [DUBBO] package com.alibaba.dubbo.rpc;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class ProxyFactory$Adaptive implements com.alibaba.dubbo.rpc.ProxyFactory {
+public com.alibaba.dubbo.rpc.Invoker getInvoker(java.lang.Object arg0, java.lang.Class arg1, com.alibaba.dubbo.common.URL arg2) throws com.alibaba.dubbo.rpc.RpcException {
+if (arg2 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg2;
+String extName = url.getParameter("proxy", "javassist");
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.rpc.ProxyFactory) name from url(" + url.toString() + ") use keys([proxy])");
+com.alibaba.dubbo.rpc.ProxyFactory extension = (com.alibaba.dubbo.rpc.ProxyFactory)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.rpc.ProxyFactory.class).getExtension(extName);
+return extension.getInvoker(arg0, arg1, arg2);
+}
+public java.lang.Object getProxy(com.alibaba.dubbo.rpc.Invoker arg0, boolean arg1) throws com.alibaba.dubbo.rpc.RpcException {
+if (arg0 == null) throw new IllegalArgumentException("com.alibaba.dubbo.rpc.Invoker argument == null");
+if (arg0.getUrl() == null) throw new IllegalArgumentException("com.alibaba.dubbo.rpc.Invoker argument getUrl() == null");com.alibaba.dubbo.common.URL url = arg0.getUrl();
+String extName = url.getParameter("proxy", "javassist");
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.rpc.ProxyFactory) name from url(" + url.toString() + ") use keys([proxy])");
+com.alibaba.dubbo.rpc.ProxyFactory extension = (com.alibaba.dubbo.rpc.ProxyFactory)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.rpc.ProxyFactory.class).getExtension(extName);
+return extension.getProxy(arg0, arg1);
+}
+public java.lang.Object getProxy(com.alibaba.dubbo.rpc.Invoker arg0) throws com.alibaba.dubbo.rpc.RpcException {
+if (arg0 == null) throw new IllegalArgumentException("com.alibaba.dubbo.rpc.Invoker argument == null");
+if (arg0.getUrl() == null) throw new IllegalArgumentException("com.alibaba.dubbo.rpc.Invoker argument getUrl() == null");com.alibaba.dubbo.common.URL url = arg0.getUrl();
+String extName = url.getParameter("proxy", "javassist");
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.rpc.ProxyFactory) name from url(" + url.toString() + ") use keys([proxy])");
+com.alibaba.dubbo.rpc.ProxyFactory extension = (com.alibaba.dubbo.rpc.ProxyFactory)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.rpc.ProxyFactory.class).getExtension(extName);
+return extension.getProxy(arg0);
+}
+}, dubbo version: 2.6.6, current host: 10.0.75.1
+2019-06-24 17:30:45  [ main:5126 ] - [ INFO ]   [DUBBO] The service ready on spring started. service: com.report.service.service.IUserInfoService, dubbo version: 2.6.6, current host: 10.0.75.1
+2019-06-24 17:30:45  [ main:5213 ] - [ DEBUG ]   [DUBBO] package com.alibaba.dubbo.cache;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class CacheFactory$Adaptive implements com.alibaba.dubbo.cache.CacheFactory {
+public com.alibaba.dubbo.cache.Cache getCache(com.alibaba.dubbo.common.URL arg0, com.alibaba.dubbo.rpc.Invocation arg1) {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+if (arg1 == null) throw new IllegalArgumentException("invocation == null");
+String methodName = arg1.getMethodName();
+String extName = url.getMethodParameter(methodName, "cache", "lru");
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.cache.CacheFactory) name from url(" + url.toString() + ") use keys([cache])");
+com.alibaba.dubbo.cache.CacheFactory extension = (com.alibaba.dubbo.cache.CacheFactory)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.cache.CacheFactory.class).getExtension(extName);
+return extension.getCache(arg0, arg1);
+}
+}, dubbo version: 2.6.6, current host: 10.0.75.1
+2019-06-24 17:30:45  [ main:5231 ] - [ DEBUG ]   [DUBBO] package com.alibaba.dubbo.monitor;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class MonitorFactory$Adaptive implements com.alibaba.dubbo.monitor.MonitorFactory {
+public com.alibaba.dubbo.monitor.Monitor getMonitor(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = ( url.getProtocol() == null ? "dubbo" : url.getProtocol() );
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.monitor.MonitorFactory) name from url(" + url.toString() + ") use keys([protocol])");
+com.alibaba.dubbo.monitor.MonitorFactory extension = (com.alibaba.dubbo.monitor.MonitorFactory)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.monitor.MonitorFactory.class).getExtension(extName);
+return extension.getMonitor(arg0);
+}
+}, dubbo version: 2.6.6, current host: 10.0.75.1
+2019-06-24 17:30:45  [ main:5247 ] - [ DEBUG ]   [DUBBO] package com.alibaba.dubbo.validation;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class Validation$Adaptive implements com.alibaba.dubbo.validation.Validation {
+public com.alibaba.dubbo.validation.Validator getValidator(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getParameter("validation", "jvalidation");
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.validation.Validation) name from url(" + url.toString() + ") use keys([validation])");
+com.alibaba.dubbo.validation.Validation extension = (com.alibaba.dubbo.validation.Validation)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.validation.Validation.class).getExtension(extName);
+return extension.getValidator(arg0);
+}
+}, dubbo version: 2.6.6, current host: 10.0.75.1
+2019-06-24 17:30:45  [ main:5266 ] - [ INFO ]   [DUBBO] Export dubbo service com.report.service.service.IUserInfoService to local registry, dubbo version: 2.6.6, current host: 10.0.75.1
+2019-06-24 17:30:45  [ main:5266 ] - [ INFO ]   [DUBBO] Export dubbo service com.report.service.service.IUserInfoService to url dubbo://10.0.75.1:20880/com.report.service.service.IUserInfoService?anyhost=true&application=dubbo-b-server&bean.name=com.report.service.service.IUserInfoService&bind.ip=10.0.75.1&bind.port=20880&dubbo=2.0.2&generic=false&interface=com.report.service.service.IUserInfoService&methods=queryUserInfo,insertUserInfo,updateUserInfo,countUserInfo,deleteUserInfo&pid=3244&side=provider&timestamp=1561368645810, dubbo version: 2.6.6, current host: 10.0.75.1
+2019-06-24 17:30:45  [ main:5267 ] - [ INFO ]   [DUBBO] Register dubbo service com.report.service.service.IUserInfoService url dubbo://10.0.75.1:20880/com.report.service.service.IUserInfoService?anyhost=true&application=dubbo-b-server&bean.name=com.report.service.service.IUserInfoService&bind.ip=10.0.75.1&bind.port=20880&dubbo=2.0.2&generic=false&interface=com.report.service.service.IUserInfoService&methods=queryUserInfo,insertUserInfo,updateUserInfo,countUserInfo,deleteUserInfo&monitor=dubbo%3A%2F%2F172.17.249.65%3A2181%2Fcom.alibaba.dubbo.registry.RegistryService%3Fapplication%3Ddubbo-b-server%26client%3Dzkclient%26dubbo%3D2.0.2%26pid%3D3244%26protocol%3Dregistry%26refer%3Dapplication%253Ddubbo-b-server%2526dubbo%253D2.0.2%2526interface%253Dcom.alibaba.dubbo.monitor.MonitorService%2526pid%253D3244%2526register.ip%253D10.0.75.1%2526timestamp%253D1561368645934%26registry%3Dzookeeper%26timestamp%3D1561368645799&pid=3244&side=provider&timestamp=1561368645810 to registry registry://172.17.249.65:2181/com.alibaba.dubbo.registry.RegistryService?application=dubbo-b-server&client=zkclient&dubbo=2.0.2&pid=3244&registry=zookeeper&timestamp=1561368645799, dubbo version: 2.6.6, current host: 10.0.75.1
+2019-06-24 17:30:45  [ main:5286 ] - [ DEBUG ]   [DUBBO] package com.alibaba.dubbo.rpc.cluster;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class Cluster$Adaptive implements com.alibaba.dubbo.rpc.cluster.Cluster {
+public com.alibaba.dubbo.rpc.Invoker join(com.alibaba.dubbo.rpc.cluster.Directory arg0) throws com.alibaba.dubbo.rpc.RpcException {
+if (arg0 == null) throw new IllegalArgumentException("com.alibaba.dubbo.rpc.cluster.Directory argument == null");
+if (arg0.getUrl() == null) throw new IllegalArgumentException("com.alibaba.dubbo.rpc.cluster.Directory argument getUrl() == null");com.alibaba.dubbo.common.URL url = arg0.getUrl();
+String extName = url.getParameter("cluster", "failover");
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.rpc.cluster.Cluster) name from url(" + url.toString() + ") use keys([cluster])");
+com.alibaba.dubbo.rpc.cluster.Cluster extension = (com.alibaba.dubbo.rpc.cluster.Cluster)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.rpc.cluster.Cluster.class).getExtension(extName);
+return extension.join(arg0);
+}
+}, dubbo version: 2.6.6, current host: 10.0.75.1
+2019-06-24 17:30:45  [ main:5303 ] - [ DEBUG ]   [DUBBO] package com.alibaba.dubbo.registry;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class RegistryFactory$Adaptive implements com.alibaba.dubbo.registry.RegistryFactory {
+public com.alibaba.dubbo.registry.Registry getRegistry(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = ( url.getProtocol() == null ? "dubbo" : url.getProtocol() );
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.registry.RegistryFactory) name from url(" + url.toString() + ") use keys([protocol])");
+com.alibaba.dubbo.registry.RegistryFactory extension = (com.alibaba.dubbo.registry.RegistryFactory)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.registry.RegistryFactory.class).getExtension(extName);
+return extension.getRegistry(arg0);
+}
+}, dubbo version: 2.6.6, current host: 10.0.75.1
+2019-06-24 17:30:45  [ main:5324 ] - [ DEBUG ]  Using SLF4J as the default logging framework
+2019-06-24 17:30:45  [ main:5329 ] - [ DEBUG ]  -Dio.netty.eventLoopThreads: 8
+2019-06-24 17:30:46  [ main:5351 ] - [ DEBUG ]  -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2019-06-24 17:30:46  [ main:5352 ] - [ DEBUG ]  -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2019-06-24 17:30:46  [ main:5362 ] - [ DEBUG ]  -Dio.netty.noKeySetOptimization: false
+2019-06-24 17:30:46  [ main:5362 ] - [ DEBUG ]  -Dio.netty.selectorAutoRebuildThreshold: 512
+2019-06-24 17:30:46  [ main:5382 ] - [ DEBUG ]  Platform: Windows
+2019-06-24 17:30:46  [ main:5383 ] - [ DEBUG ]  -Dio.netty.noUnsafe: false
+2019-06-24 17:30:46  [ main:5384 ] - [ DEBUG ]  Java version: 8
+2019-06-24 17:30:46  [ main:5386 ] - [ DEBUG ]  sun.misc.Unsafe.theUnsafe: available
+2019-06-24 17:30:46  [ main:5387 ] - [ DEBUG ]  sun.misc.Unsafe.copyMemory: available
+2019-06-24 17:30:46  [ main:5388 ] - [ DEBUG ]  java.nio.Buffer.address: available
+2019-06-24 17:30:46  [ main:5389 ] - [ DEBUG ]  direct buffer constructor: available
+2019-06-24 17:30:46  [ main:5390 ] - [ DEBUG ]  java.nio.Bits.unaligned: available, true
+2019-06-24 17:30:46  [ main:5390 ] - [ DEBUG ]  jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2019-06-24 17:30:46  [ main:5391 ] - [ DEBUG ]  java.nio.DirectByteBuffer.<init>(long, int): available
+2019-06-24 17:30:46  [ main:5391 ] - [ DEBUG ]  sun.misc.Unsafe: available
+2019-06-24 17:30:46  [ main:5392 ] - [ DEBUG ]  -Dio.netty.tmpdir: C:\Users\29616\AppData\Local\Temp (java.io.tmpdir)
+2019-06-24 17:30:46  [ main:5392 ] - [ DEBUG ]  -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2019-06-24 17:30:46  [ main:5394 ] - [ DEBUG ]  -Dio.netty.maxDirectMemory: 3791650816 bytes
+2019-06-24 17:30:46  [ main:5394 ] - [ DEBUG ]  -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2019-06-24 17:30:46  [ main:5395 ] - [ DEBUG ]  java.nio.ByteBuffer.cleaner(): available
+2019-06-24 17:30:46  [ main:5396 ] - [ DEBUG ]  -Dio.netty.noPreferDirect: false
+2019-06-24 17:30:46  [ main:5406 ] - [ DEBUG ]  org.jctools-core.MpscChunkedArrayQueue: available
+2019-06-24 17:30:46  [ main:5487 ] - [ DEBUG ]  -Dio.netty.processId: 3244 (auto-detected)
+2019-06-24 17:30:46  [ main:5489 ] - [ DEBUG ]  -Djava.net.preferIPv4Stack: false
+2019-06-24 17:30:46  [ main:5490 ] - [ DEBUG ]  -Djava.net.preferIPv6Addresses: false
+2019-06-24 17:30:46  [ main:6266 ] - [ DEBUG ]  Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2019-06-24 17:30:46  [ main:6267 ] - [ DEBUG ]  Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2019-06-24 17:30:47  [ main:7083 ] - [ DEBUG ]  -Dio.netty.machineId: 70:4d:7b:ff:fe:3f:7a:62 (auto-detected)
+2019-06-24 17:30:47  [ main:7097 ] - [ DEBUG ]  -Dio.netty.leakDetection.level: simple
+2019-06-24 17:30:47  [ main:7098 ] - [ DEBUG ]  -Dio.netty.leakDetection.targetRecords: 4
+2019-06-24 17:30:47  [ main:7127 ] - [ DEBUG ]  -Dio.netty.allocator.numHeapArenas: 8
+2019-06-24 17:30:47  [ main:7127 ] - [ DEBUG ]  -Dio.netty.allocator.numDirectArenas: 8
+2019-06-24 17:30:47  [ main:7127 ] - [ DEBUG ]  -Dio.netty.allocator.pageSize: 8192
+2019-06-24 17:30:47  [ main:7127 ] - [ DEBUG ]  -Dio.netty.allocator.maxOrder: 11
+2019-06-24 17:30:47  [ main:7128 ] - [ DEBUG ]  -Dio.netty.allocator.chunkSize: 16777216
+2019-06-24 17:30:47  [ main:7128 ] - [ DEBUG ]  -Dio.netty.allocator.tinyCacheSize: 512
+2019-06-24 17:30:47  [ main:7128 ] - [ DEBUG ]  -Dio.netty.allocator.smallCacheSize: 256
+2019-06-24 17:30:47  [ main:7129 ] - [ DEBUG ]  -Dio.netty.allocator.normalCacheSize: 64
+2019-06-24 17:30:47  [ main:7129 ] - [ DEBUG ]  -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2019-06-24 17:30:47  [ main:7129 ] - [ DEBUG ]  -Dio.netty.allocator.cacheTrimInterval: 8192
+2019-06-24 17:30:47  [ main:7129 ] - [ DEBUG ]  -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2019-06-24 17:30:47  [ main:7130 ] - [ DEBUG ]  -Dio.netty.allocator.useCacheForAllThreads: true
+2019-06-24 17:30:47  [ main:7130 ] - [ DEBUG ]  -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2019-06-24 17:30:47  [ main:7143 ] - [ DEBUG ]  -Dio.netty.allocator.type: pooled
+2019-06-24 17:30:47  [ main:7143 ] - [ DEBUG ]  -Dio.netty.threadLocalDirectBufferSize: 0
+2019-06-24 17:30:47  [ main:7143 ] - [ DEBUG ]  -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2019-06-24 17:30:47  [ main:7161 ] - [ INFO ]   [DUBBO] qos-server bind localhost:22222, dubbo version: 2.6.6, current host: 10.0.75.1
+2019-06-24 17:30:47  [ main:7174 ] - [ DEBUG ]   [DUBBO] package com.alibaba.dubbo.remoting;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class Transporter$Adaptive implements com.alibaba.dubbo.remoting.Transporter {
+public com.alibaba.dubbo.remoting.Client connect(com.alibaba.dubbo.common.URL arg0, com.alibaba.dubbo.remoting.ChannelHandler arg1) throws com.alibaba.dubbo.remoting.RemotingException {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getParameter("client", url.getParameter("transporter", "netty"));
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.remoting.Transporter) name from url(" + url.toString() + ") use keys([client, transporter])");
+com.alibaba.dubbo.remoting.Transporter extension = (com.alibaba.dubbo.remoting.Transporter)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.remoting.Transporter.class).getExtension(extName);
+return extension.connect(arg0, arg1);
+}
+public com.alibaba.dubbo.remoting.Server bind(com.alibaba.dubbo.common.URL arg0, com.alibaba.dubbo.remoting.ChannelHandler arg1) throws com.alibaba.dubbo.remoting.RemotingException {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getParameter("server", url.getParameter("transporter", "netty"));
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.remoting.Transporter) name from url(" + url.toString() + ") use keys([server, transporter])");
+com.alibaba.dubbo.remoting.Transporter extension = (com.alibaba.dubbo.remoting.Transporter)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.remoting.Transporter.class).getExtension(extName);
+return extension.bind(arg0, arg1);
+}
+}, dubbo version: 2.6.6, current host: 10.0.75.1
+2019-06-24 17:30:47  [ main:7189 ] - [ DEBUG ]   [DUBBO] package com.alibaba.dubbo.remoting;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class Dispatcher$Adaptive implements com.alibaba.dubbo.remoting.Dispatcher {
+public com.alibaba.dubbo.remoting.ChannelHandler dispatch(com.alibaba.dubbo.remoting.ChannelHandler arg0, com.alibaba.dubbo.common.URL arg1) {
+if (arg1 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg1;
+String extName = url.getParameter("dispatcher", url.getParameter("dispather", url.getParameter("channel.handler", "all")));
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.remoting.Dispatcher) name from url(" + url.toString() + ") use keys([dispatcher, dispather, channel.handler])");
+com.alibaba.dubbo.remoting.Dispatcher extension = (com.alibaba.dubbo.remoting.Dispatcher)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.remoting.Dispatcher.class).getExtension(extName);
+return extension.dispatch(arg0, arg1);
+}
+}, dubbo version: 2.6.6, current host: 10.0.75.1
+2019-06-24 17:30:47  [ main:7200 ] - [ DEBUG ]   [DUBBO] package com.alibaba.dubbo.common.threadpool;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class ThreadPool$Adaptive implements com.alibaba.dubbo.common.threadpool.ThreadPool {
+public java.util.concurrent.Executor getExecutor(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getParameter("threadpool", "fixed");
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.common.threadpool.ThreadPool) name from url(" + url.toString() + ") use keys([threadpool])");
+com.alibaba.dubbo.common.threadpool.ThreadPool extension = (com.alibaba.dubbo.common.threadpool.ThreadPool)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.common.threadpool.ThreadPool.class).getExtension(extName);
+return extension.getExecutor(arg0);
+}
+}, dubbo version: 2.6.6, current host: 10.0.75.1
+2019-06-24 17:30:47  [ main:7237 ] - [ INFO ]   [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /10.0.75.1:20880, dubbo version: 2.6.6, current host: 10.0.75.1
+2019-06-24 17:30:47  [ main:7242 ] - [ DEBUG ]   [DUBBO] package com.alibaba.dubbo.remoting.zookeeper;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class ZookeeperTransporter$Adaptive implements com.alibaba.dubbo.remoting.zookeeper.ZookeeperTransporter {
+public com.alibaba.dubbo.remoting.zookeeper.ZookeeperClient connect(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getParameter("client", url.getParameter("transporter", "curator"));
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.remoting.zookeeper.ZookeeperTransporter) name from url(" + url.toString() + ") use keys([client, transporter])");
+com.alibaba.dubbo.remoting.zookeeper.ZookeeperTransporter extension = (com.alibaba.dubbo.remoting.zookeeper.ZookeeperTransporter)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.remoting.zookeeper.ZookeeperTransporter.class).getExtension(extName);
+return extension.connect(arg0);
+}
+}, dubbo version: 2.6.6, current host: 10.0.75.1
+2019-06-24 17:30:47  [ main:7253 ] - [ INFO ]   [DUBBO] Load registry store file C:\Users\29616\.dubbo\dubbo-registry-dubbo-b-server-172.17.249.65:2181.cache, data: {com.report.service.service.IUserInfoService=empty://10.0.75.1:20880/com.report.service.service.IUserInfoService?anyhost=true&application=dubbo-b-server&bean.name=com.report.service.service.IUserInfoService&category=configurators&check=false&dubbo=2.0.2&generic=false&interface=com.report.service.service.IUserInfoService&methods=queryUserInfo,countUserInfo,updateUserInfo,insertUserInfo,deleteUserInfo&pid=15396&side=provider&timestamp=1561368589424}, dubbo version: 2.6.6, current host: 10.0.75.1
+2019-06-24 17:30:47  [ main:7260 ] - [ INFO ]   [DUBBO] Executor for listenablefuture is null, will use default executor!, dubbo version: 2.6.6, current host: 10.0.75.1
+2019-06-24 17:30:47  [ DubboZkclientConnector:7269 ] - [ DEBUG ]  Creating new ZookKeeper instance to connect to 172.17.249.65:2181.
+2019-06-24 17:30:47  [ ZkClient-EventThread-23-172.17.249.65:2181:7269 ] - [ INFO ]  Starting ZkClient event thread.
+2019-06-24 17:30:47  [ DubboZkclientConnector:7279 ] - [ INFO ]  Client environment:zookeeper.version=3.5.5-390fe37ea45dee01bf87dc1c042b5e3dcce88653, built on 05/03/2019 12:07 GMT
+2019-06-24 17:30:47  [ DubboZkclientConnector:7279 ] - [ INFO ]  Client environment:host.name=DESKTOP-PVT500O
+2019-06-24 17:30:47  [ DubboZkclientConnector:7279 ] - [ INFO ]  Client environment:java.version=1.8.0_181
+2019-06-24 17:30:47  [ DubboZkclientConnector:7279 ] - [ INFO ]  Client environment:java.vendor=Oracle Corporation
+2019-06-24 17:30:47  [ DubboZkclientConnector:7279 ] - [ INFO ]  Client environment:java.home=C:\Program Files\Java\jdk1.8.0_181\jre
+2019-06-24 17:30:47  [ DubboZkclientConnector:7279 ] - [ INFO ]  Client environment:java.class.path=C:\Program Files\JetBrains\IntelliJ IDEA 2019.1.1\lib\idea_rt.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2019.1.1\plugins\junit\lib\junit-rt.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2019.1.1\plugins\junit\lib\junit5-rt.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\rt.jar;D:\codingData\Server\service\target\test-classes;D:\codingData\Server\service\target\classes;D:\codingData\Server\model\target\classes;D:\codingData\Server\dao\target\classes;D:\58work\maven\repo\org\apache\lucene\lucene-core\8.1.1\lucene-core-8.1.1.jar;D:\58work\maven\repo\junit\junit\4.12\junit-4.12.jar;D:\58work\maven\repo\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;D:\58work\maven\repo\org\slf4j\slf4j-api\1.7.26\slf4j-api-1.7.26.jar;D:\58work\maven\repo\org\apache\logging\log4j\log4j-jcl\2.11.2\log4j-jcl-2.11.2.jar;D:\58work\maven\repo\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;D:\58work\maven\repo\org\apache\logging\log4j\log4j-api\2.11.2\log4j-api-2.11.2.jar;D:\58work\maven\repo\org\apache\logging\log4j\log4j-core\2.11.2\log4j-core-2.11.2.jar;D:\58work\maven\repo\org\apache\logging\log4j\log4j-web\2.11.2\log4j-web-2.11.2.jar;D:\58work\maven\repo\org\springframework\spring-context\5.1.8.RELEASE\spring-context-5.1.8.RELEASE.jar;D:\58work\maven\repo\org\springframework\spring-aop\5.1.8.RELEASE\spring-aop-5.1.8.RELEASE.jar;D:\58work\maven\repo\org\springframework\spring-beans\5.1.8.RELEASE\spring-beans-5.1.8.RELEASE.jar;D:\58work\maven\repo\org\springframework\spring-core\5.1.8.RELEASE\spring-core-5.1.8.RELEASE.jar;D:\58work\maven\repo\org\springframework\spring-jcl\5.1.8.RELEASE\spring-jcl-5.1.8.RELEASE.jar;D:\58work\maven\repo\org\springframework\spring-expression\5.1.8.RELEASE\spring-expression-5.1.8.RELEASE.jar;D:\58work\maven\repo\org\springframework\spring-aspects\5.1.8.RELEASE\spring-aspects-5.1.8.RELEASE.jar;D:\58work\maven\repo\org\aspectj\aspectjweaver\1.9.3\aspectjweaver-1.9.3.jar;D:\58work\maven\repo\org\springframework\spring-orm\5.1.8.RELEASE\spring-orm-5.1.8.RELEASE.jar;D:\58work\maven\repo\org\springframework\spring-jdbc\5.1.8.RELEASE\spring-jdbc-5.1.8.RELEASE.jar;D:\58work\maven\repo\org\springframework\spring-tx\5.1.8.RELEASE\spring-tx-5.1.8.RELEASE.jar;D:\58work\maven\repo\org\springframework\spring-test\5.1.8.RELEASE\spring-test-5.1.8.RELEASE.jar;D:\58work\maven\repo\org\springframework\spring-web\5.1.8.RELEASE\spring-web-5.1.8.RELEASE.jar;D:\58work\maven\repo\org\hibernate\hibernate-core\5.1.2.Final\hibernate-core-5.1.2.Final.jar;D:\58work\maven\repo\org\jboss\logging\jboss-logging\3.3.0.Final\jboss-logging-3.3.0.Final.jar;D:\58work\maven\repo\org\hibernate\javax\persistence\hibernate-jpa-2.1-api\1.0.0.Final\hibernate-jpa-2.1-api-1.0.0.Final.jar;D:\58work\maven\repo\org\javassist\javassist\3.20.0-GA\javassist-3.20.0-GA.jar;D:\58work\maven\repo\antlr\antlr\2.7.7\antlr-2.7.7.jar;D:\58work\maven\repo\org\apache\geronimo\specs\geronimo-jta_1.1_spec\1.1.1\geronimo-jta_1.1_spec-1.1.1.jar;D:\58work\maven\repo\org\jboss\jandex\2.0.0.Final\jandex-2.0.0.Final.jar;D:\58work\maven\repo\com\fasterxml\classmate\1.3.0\classmate-1.3.0.jar;D:\58work\maven\repo\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;D:\58work\maven\repo\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar;D:\58work\maven\repo\org\hibernate\common\hibernate-commons-annotations\5.0.1.Final\hibernate-commons-annotations-5.0.1.Final.jar;D:\58work\maven\repo\org\apache\struts\struts2-core\2.5.20\struts2-core-2.5.20.jar;D:\58work\maven\repo\org\freemarker\freemarker\2.3.28\freemarker-2.3.28.jar;D:\58work\maven\repo\ognl\ognl\3.1.21\ognl-3.1.21.jar;D:\58work\maven\repo\commons-fileupload\commons-fileupload\1.4\commons-fileupload-1.4.jar;D:\58work\maven\repo\commons-io\commons-io\2.6\commons-io-2.6.jar;D:\58work\maven\repo\org\apache\commons\commons-lang3\3.8.1\commons-lang3-3.8.1.jar;D:\58work\maven\repo\org\apache\struts\struts2-spring-plugin\2.5.20\struts2-spring-plugin-2.5.20.jar;D:\58work\maven\repo\mysql\mysql-connector-java\8.0.16\mysql-connector-java-8.0.16.jar;D:\58work\maven\repo\com\google\protobuf\protobuf-java\3.6.1\protobuf-java-3.6.1.jar;D:\58work\maven\repo\c3p0\c3p0\0.9.1.2\c3p0-0.9.1.2.jar;D:\58work\maven\repo\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar;D:\58work\maven\repo\javax\servlet\jsp-api\2.0\jsp-api-2.0.jar;D:\58work\maven\repo\javax\servlet\jstl\1.2\jstl-1.2.jar;D:\58work\maven\repo\io\netty\netty-all\4.1.36.Final\netty-all-4.1.36.Final.jar;D:\58work\maven\repo\org\slf4j\slf4j-log4j12\1.7.26\slf4j-log4j12-1.7.26.jar;D:\58work\maven\repo\log4j\log4j\1.2.17\log4j-1.2.17.jar;D:\58work\maven\repo\org\projectlombok\lombok\1.18.8\lombok-1.18.8.jar;D:\58work\maven\repo\com\google\guava\guava\28.0-jre\guava-28.0-jre.jar;D:\58work\maven\repo\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;D:\58work\maven\repo\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;D:\58work\maven\repo\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;D:\58work\maven\repo\org\checkerframework\checker-qual\2.8.1\checker-qual-2.8.1.jar;D:\58work\maven\repo\com\google\errorprone\error_prone_annotations\2.3.2\error_prone_annotations-2.3.2.jar;D:\58work\maven\repo\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;D:\58work\maven\repo\org\codehaus\mojo\animal-sniffer-annotations\1.17\animal-sniffer-annotations-1.17.jar;D:\58work\maven\repo\com\alibaba\fastjson\1.2.58\fastjson-1.2.58.jar;D:\58work\maven\repo\org\apache\zookeeper\zookeeper\3.5.5\zookeeper-3.5.5.jar;D:\58work\maven\repo\org\apache\zookeeper\zookeeper-jute\3.5.5\zookeeper-jute-3.5.5.jar;D:\58work\maven\repo\org\apache\yetus\audience-annotations\0.5.0\audience-annotations-0.5.0.jar;D:\58work\maven\repo\com\101tec\zkclient\0.11\zkclient-0.11.jar;D:\58work\maven\repo\com\alibaba\dubbo\2.6.6\dubbo-2.6.6.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2019.1.1\lib\idea_rt.jar
+2019-06-24 17:30:47  [ DubboZkclientConnector:7279 ] - [ INFO ]  Client environment:java.library.path=C:\Program Files\Java\jdk1.8.0_181\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\NetSarang\Xshell 6\;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\maven2\\bin;C:\Program Files (x86)\MSBuild\14.0\Bin;C:\Program Files\dotnet\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Windows\System32\OpenSSH;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\29616\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\JetBrains\IntelliJ IDEA 2019.1.1\bin;;C:\Users\29616\go\bin;C:\Program Files\JetBrains\GoLand 2019.1.2\bin;;C:\Users\29616\AppData\Local\Programs\Fiddler;.
+2019-06-24 17:30:47  [ DubboZkclientConnector:7279 ] - [ INFO ]  Client environment:java.io.tmpdir=C:\Users\29616\AppData\Local\Temp\
+2019-06-24 17:30:47  [ DubboZkclientConnector:7280 ] - [ INFO ]  Client environment:java.compiler=<NA>
+2019-06-24 17:30:47  [ DubboZkclientConnector:7280 ] - [ INFO ]  Client environment:os.name=Windows 10
+2019-06-24 17:30:47  [ DubboZkclientConnector:7280 ] - [ INFO ]  Client environment:os.arch=amd64
+2019-06-24 17:30:47  [ DubboZkclientConnector:7280 ] - [ INFO ]  Client environment:os.version=10.0
+2019-06-24 17:30:47  [ DubboZkclientConnector:7280 ] - [ INFO ]  Client environment:user.name=29616
+2019-06-24 17:30:47  [ DubboZkclientConnector:7280 ] - [ INFO ]  Client environment:user.home=C:\Users\29616
+2019-06-24 17:30:47  [ DubboZkclientConnector:7280 ] - [ INFO ]  Client environment:user.dir=D:\codingData\Server\service
+2019-06-24 17:30:47  [ DubboZkclientConnector:7280 ] - [ INFO ]  Client environment:os.memory.free=159MB
+2019-06-24 17:30:47  [ DubboZkclientConnector:7281 ] - [ INFO ]  Client environment:os.memory.max=3616MB
+2019-06-24 17:30:47  [ DubboZkclientConnector:7281 ] - [ INFO ]  Client environment:os.memory.total=250MB
+2019-06-24 17:30:47  [ DubboZkclientConnector:7283 ] - [ INFO ]  Initiating client connection, connectString=172.17.249.65:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@1b7b5a77
+2019-06-24 17:30:47  [ DubboZkclientConnector:7288 ] - [ INFO ]  Setting -D jdk.tls.rejectClientInitiatedRenegotiation=true to disable client-initiated TLS renegotiation
+2019-06-24 17:30:47  [ DubboZkclientConnector:7297 ] - [ INFO ]  jute.maxbuffer value is 4194304 Bytes
+2019-06-24 17:30:47  [ DubboZkclientConnector:7307 ] - [ INFO ]  zookeeper.request.timeout value is 0. feature enabled=
+2019-06-24 17:30:47  [ DubboZkclientConnector:7308 ] - [ DEBUG ]  Awaiting connection to Zookeeper server
+2019-06-24 17:30:47  [ DubboZkclientConnector:7308 ] - [ INFO ]  Waiting for keeper state SyncConnected
+2019-06-24 17:30:47  [ DubboZkclientConnector-SendThread(172.17.249.65:2181):7317 ] - [ DEBUG ]  Canonicalized address to DESKTOP-PVT500O.mshome.net
+2019-06-24 17:30:47  [ DubboZkclientConnector-SendThread(172.17.249.65:2181):7320 ] - [ INFO ]  Opening socket connection to server DESKTOP-PVT500O.mshome.net/172.17.249.65:2181. Will not attempt to authenticate using SASL (unknown error)
+2019-06-24 17:30:47  [ DubboZkclientConnector-SendThread(172.17.249.65:2181):7323 ] - [ INFO ]  Socket connection established, initiating session, client: /172.17.249.65:59799, server: DESKTOP-PVT500O.mshome.net/172.17.249.65:2181
+2019-06-24 17:30:47  [ DubboZkclientConnector-SendThread(172.17.249.65:2181):7327 ] - [ DEBUG ]  Session establishment request sent on DESKTOP-PVT500O.mshome.net/172.17.249.65:2181
+2019-06-24 17:30:48  [ DubboZkclientConnector-SendThread(172.17.249.65:2181):7336 ] - [ INFO ]  Session establishment complete on server DESKTOP-PVT500O.mshome.net/172.17.249.65:2181, sessionid = 0x1000a0d102e0032, negotiated timeout = 30000
+2019-06-24 17:30:48  [ DubboZkclientConnector-EventThread:7340 ] - [ DEBUG ]  Received event: WatchedEvent state:SyncConnected type:None path:null
+2019-06-24 17:30:48  [ DubboZkclientConnector-EventThread:7341 ] - [ INFO ]  zookeeper state changed (SyncConnected)
+2019-06-24 17:30:48  [ DubboZkclientConnector-EventThread:7341 ] - [ DEBUG ]  Leaving process event
+2019-06-24 17:30:48  [ DubboZkclientConnector:7341 ] - [ DEBUG ]  State is SyncConnected
+2019-06-24 17:30:48  [ main:7344 ] - [ INFO ]   [DUBBO] Register: dubbo://10.0.75.1:20880/com.report.service.service.IUserInfoService?anyhost=true&application=dubbo-b-server&bean.name=com.report.service.service.IUserInfoService&dubbo=2.0.2&generic=false&interface=com.report.service.service.IUserInfoService&methods=queryUserInfo,insertUserInfo,updateUserInfo,countUserInfo,deleteUserInfo&pid=3244&side=provider&timestamp=1561368645810, dubbo version: 2.6.6, current host: 10.0.75.1
+2019-06-24 17:30:48  [ DubboZkclientConnector-SendThread(172.17.249.65:2181):7354 ] - [ DEBUG ]  Reading reply sessionid:0x1000a0d102e0032, packet:: clientPath:null serverPath:null finished:false header:: 1,3  replyHeader:: 1,227,0  request:: '/dubbo/com.report.service.service.IUserInfoService/providers,F  response:: s{4,4,1561185990882,1561185990882,0,110,0,0,0,0,225} 
+2019-06-24 17:30:48  [ DubboZkclientConnector-SendThread(172.17.249.65:2181):7367 ] - [ DEBUG ]  Reading reply sessionid:0x1000a0d102e0032, packet:: clientPath:null serverPath:null finished:false header:: 2,1  replyHeader:: 2,228,0  request:: '/dubbo/com.report.service.service.IUserInfoService/providers/dubbo%253A%252F%252F10.0.75.1%253A20880%252Fcom.report.service.service.IUserInfoService%253Fanyhost%253Dtrue%2526application%253Ddubbo-b-server%2526bean.name%253Dcom.report.service.service.IUserInfoService%2526dubbo%253D2.0.2%2526generic%253Dfalse%2526interface%253Dcom.report.service.service.IUserInfoService%2526methods%253DqueryUserInfo%252CinsertUserInfo%252CupdateUserInfo%252CcountUserInfo%252CdeleteUserInfo%2526pid%253D3244%2526side%253Dprovider%2526timestamp%253D1561368645810,,v{s{31,s{'world,'anyone}}},1  response:: '/dubbo/com.report.service.service.IUserInfoService/providers/dubbo%253A%252F%252F10.0.75.1%253A20880%252Fcom.report.service.service.IUserInfoService%253Fanyhost%253Dtrue%2526application%253Ddubbo-b-server%2526bean.name%253Dcom.report.service.service.IUserInfoService%2526dubbo%253D2.0.2%2526generic%253Dfalse%2526interface%253Dcom.report.service.service.IUserInfoService%2526methods%253DqueryUserInfo%252CinsertUserInfo%252CupdateUserInfo%252CcountUserInfo%252CdeleteUserInfo%2526pid%253D3244%2526side%253Dprovider%2526timestamp%253D1561368645810 
+2019-06-24 17:30:48  [ main:7368 ] - [ INFO ]   [DUBBO] Subscribe: provider://10.0.75.1:20880/com.report.service.service.IUserInfoService?anyhost=true&application=dubbo-b-server&bean.name=com.report.service.service.IUserInfoService&category=configurators&check=false&dubbo=2.0.2&generic=false&interface=com.report.service.service.IUserInfoService&methods=queryUserInfo,insertUserInfo,updateUserInfo,countUserInfo,deleteUserInfo&pid=3244&side=provider&timestamp=1561368645810, dubbo version: 2.6.6, current host: 10.0.75.1
+2019-06-24 17:30:48  [ DubboZkclientConnector-SendThread(172.17.249.65:2181):7372 ] - [ DEBUG ]  Reading reply sessionid:0x1000a0d102e0032, packet:: clientPath:null serverPath:null finished:false header:: 3,3  replyHeader:: 3,228,0  request:: '/dubbo/com.report.service.service.IUserInfoService/configurators,F  response:: s{6,6,1561185990898,1561185990898,0,0,0,0,0,0,6} 
+2019-06-24 17:30:48  [ DubboZkclientConnector-SendThread(172.17.249.65:2181):7376 ] - [ DEBUG ]  Reading reply sessionid:0x1000a0d102e0032, packet:: clientPath:null serverPath:null finished:false header:: 4,3  replyHeader:: 4,228,0  request:: '/dubbo/com.report.service.service.IUserInfoService/configurators,T  response:: s{6,6,1561185990898,1561185990898,0,0,0,0,0,0,6} 
+2019-06-24 17:30:48  [ DubboZkclientConnector-SendThread(172.17.249.65:2181):7380 ] - [ DEBUG ]  Reading reply sessionid:0x1000a0d102e0032, packet:: clientPath:null serverPath:null finished:false header:: 5,8  replyHeader:: 5,228,0  request:: '/dubbo/com.report.service.service.IUserInfoService/configurators,T  response:: v{} 
+2019-06-24 17:30:48  [ main:7380 ] - [ INFO ]   [DUBBO] Notify urls for subscribe url provider://10.0.75.1:20880/com.report.service.service.IUserInfoService?anyhost=true&application=dubbo-b-server&bean.name=com.report.service.service.IUserInfoService&category=configurators&check=false&dubbo=2.0.2&generic=false&interface=com.report.service.service.IUserInfoService&methods=queryUserInfo,insertUserInfo,updateUserInfo,countUserInfo,deleteUserInfo&pid=3244&side=provider&timestamp=1561368645810, urls: [empty://10.0.75.1:20880/com.report.service.service.IUserInfoService?anyhost=true&application=dubbo-b-server&bean.name=com.report.service.service.IUserInfoService&category=configurators&check=false&dubbo=2.0.2&generic=false&interface=com.report.service.service.IUserInfoService&methods=queryUserInfo,insertUserInfo,updateUserInfo,countUserInfo,deleteUserInfo&pid=3244&side=provider&timestamp=1561368645810], dubbo version: 2.6.6, current host: 10.0.75.1
+2019-06-24 17:30:48  [ main:7381 ] - [ DEBUG ]   [DUBBO] original override urls: [empty://10.0.75.1:20880/com.report.service.service.IUserInfoService?anyhost=true&application=dubbo-b-server&bean.name=com.report.service.service.IUserInfoService&category=configurators&check=false&dubbo=2.0.2&generic=false&interface=com.report.service.service.IUserInfoService&methods=queryUserInfo,insertUserInfo,updateUserInfo,countUserInfo,deleteUserInfo&pid=3244&side=provider&timestamp=1561368645810], dubbo version: 2.6.6, current host: 10.0.75.1
+2019-06-24 17:30:48  [ main:7382 ] - [ DEBUG ]   [DUBBO] subscribe url: provider://10.0.75.1:20880/com.report.service.service.IUserInfoService?anyhost=true&application=dubbo-b-server&bean.name=com.report.service.service.IUserInfoService&category=configurators&check=false&dubbo=2.0.2&generic=false&interface=com.report.service.service.IUserInfoService&methods=queryUserInfo,insertUserInfo,updateUserInfo,countUserInfo,deleteUserInfo&pid=3244&side=provider&timestamp=1561368645810, override urls: [empty://10.0.75.1:20880/com.report.service.service.IUserInfoService?anyhost=true&application=dubbo-b-server&bean.name=com.report.service.service.IUserInfoService&category=configurators&check=false&dubbo=2.0.2&generic=false&interface=com.report.service.service.IUserInfoService&methods=queryUserInfo,insertUserInfo,updateUserInfo,countUserInfo,deleteUserInfo&pid=3244&side=provider&timestamp=1561368645810], dubbo version: 2.6.6, current host: 10.0.75.1
+2019-06-24 17:30:48  [ main:7393 ] - [ DEBUG ]   [DUBBO] package com.alibaba.dubbo.rpc.cluster;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class RouterFactory$Adaptive implements com.alibaba.dubbo.rpc.cluster.RouterFactory {
+public com.alibaba.dubbo.rpc.cluster.Router getRouter(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getProtocol();
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.rpc.cluster.RouterFactory) name from url(" + url.toString() + ") use keys([protocol])");
+com.alibaba.dubbo.rpc.cluster.RouterFactory extension = (com.alibaba.dubbo.rpc.cluster.RouterFactory)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.rpc.cluster.RouterFactory.class).getExtension(extName);
+return extension.getRouter(arg0);
+}
+}, dubbo version: 2.6.6, current host: 10.0.75.1
+2019-06-24 17:30:48  [ main:7408 ] - [ DEBUG ]   [DUBBO] package com.alibaba.dubbo.rpc.cluster;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class ConfiguratorFactory$Adaptive implements com.alibaba.dubbo.rpc.cluster.ConfiguratorFactory {
+public com.alibaba.dubbo.rpc.cluster.Configurator getConfigurator(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getProtocol();
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.rpc.cluster.ConfiguratorFactory) name from url(" + url.toString() + ") use keys([protocol])");
+com.alibaba.dubbo.rpc.cluster.ConfiguratorFactory extension = (com.alibaba.dubbo.rpc.cluster.ConfiguratorFactory)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.rpc.cluster.ConfiguratorFactory.class).getExtension(extName);
+return extension.getConfigurator(arg0);
+}
+}, dubbo version: 2.6.6, current host: 10.0.75.1
+2019-06-24 17:30:48  [ main:7426 ] - [ WARN ]  1111111111111111111L
+2019-06-24 17:30:48  [ main:7436 ] - [ INFO ]  entitySize : 344
+2019-06-24 17:30:49  [ DubboShutdownHook:8811 ] - [ INFO ]   [DUBBO] Run shutdown hook now., dubbo version: 2.6.6, current host: 10.0.75.1
+2019-06-24 17:30:49  [ DubboShutdownHook:8812 ] - [ INFO ]   [DUBBO] Close all registries [zookeeper://172.17.249.65:2181/com.alibaba.dubbo.registry.RegistryService?application=dubbo-b-server&client=zkclient&dubbo=2.0.2&interface=com.alibaba.dubbo.registry.RegistryService&pid=3244&timestamp=1561368645799], dubbo version: 2.6.6, current host: 10.0.75.1
+2019-06-24 17:30:49  [ DubboShutdownHook:8812 ] - [ INFO ]   [DUBBO] Destroy registry:zookeeper://172.17.249.65:2181/com.alibaba.dubbo.registry.RegistryService?application=dubbo-b-server&client=zkclient&dubbo=2.0.2&interface=com.alibaba.dubbo.registry.RegistryService&pid=3244&timestamp=1561368645799, dubbo version: 2.6.6, current host: 10.0.75.1
+2019-06-24 17:30:49  [ DubboShutdownHook:8813 ] - [ INFO ]   [DUBBO] Unregister: dubbo://10.0.75.1:20880/com.report.service.service.IUserInfoService?anyhost=true&application=dubbo-b-server&bean.name=com.report.service.service.IUserInfoService&dubbo=2.0.2&generic=false&interface=com.report.service.service.IUserInfoService&methods=queryUserInfo,insertUserInfo,updateUserInfo,countUserInfo,deleteUserInfo&pid=3244&side=provider&timestamp=1561368645810, dubbo version: 2.6.6, current host: 10.0.75.1
+2019-06-24 17:30:49  [ DubboZkclientConnector-SendThread(172.17.249.65:2181):8820 ] - [ DEBUG ]  Reading reply sessionid:0x1000a0d102e0032, packet:: clientPath:null serverPath:null finished:false header:: 6,2  replyHeader:: 6,229,0  request:: '/dubbo/com.report.service.service.IUserInfoService/providers/dubbo%253A%252F%252F10.0.75.1%253A20880%252Fcom.report.service.service.IUserInfoService%253Fanyhost%253Dtrue%2526application%253Ddubbo-b-server%2526bean.name%253Dcom.report.service.service.IUserInfoService%2526dubbo%253D2.0.2%2526generic%253Dfalse%2526interface%253Dcom.report.service.service.IUserInfoService%2526methods%253DqueryUserInfo%252CinsertUserInfo%252CupdateUserInfo%252CcountUserInfo%252CdeleteUserInfo%2526pid%253D3244%2526side%253Dprovider%2526timestamp%253D1561368645810,-1  response:: null
+2019-06-24 17:30:49  [ DubboShutdownHook:8820 ] - [ INFO ]   [DUBBO] Destroy unregister url dubbo://10.0.75.1:20880/com.report.service.service.IUserInfoService?anyhost=true&application=dubbo-b-server&bean.name=com.report.service.service.IUserInfoService&dubbo=2.0.2&generic=false&interface=com.report.service.service.IUserInfoService&methods=queryUserInfo,insertUserInfo,updateUserInfo,countUserInfo,deleteUserInfo&pid=3244&side=provider&timestamp=1561368645810, dubbo version: 2.6.6, current host: 10.0.75.1
+2019-06-24 17:30:49  [ DubboShutdownHook:8822 ] - [ INFO ]   [DUBBO] Unsubscribe: provider://10.0.75.1:20880/com.report.service.service.IUserInfoService?anyhost=true&application=dubbo-b-server&bean.name=com.report.service.service.IUserInfoService&category=configurators&check=false&dubbo=2.0.2&generic=false&interface=com.report.service.service.IUserInfoService&methods=queryUserInfo,insertUserInfo,updateUserInfo,countUserInfo,deleteUserInfo&pid=3244&side=provider&timestamp=1561368645810, dubbo version: 2.6.6, current host: 10.0.75.1
+2019-06-24 17:30:49  [ DubboShutdownHook:8823 ] - [ INFO ]   [DUBBO] Destroy unsubscribe url provider://10.0.75.1:20880/com.report.service.service.IUserInfoService?anyhost=true&application=dubbo-b-server&bean.name=com.report.service.service.IUserInfoService&category=configurators&check=false&dubbo=2.0.2&generic=false&interface=com.report.service.service.IUserInfoService&methods=queryUserInfo,insertUserInfo,updateUserInfo,countUserInfo,deleteUserInfo&pid=3244&side=provider&timestamp=1561368645810, dubbo version: 2.6.6, current host: 10.0.75.1
+2019-06-24 17:30:49  [ DubboShutdownHook:8823 ] - [ DEBUG ]  Closing ZkClient...
+2019-06-24 17:30:49  [ ZkClient-EventThread-23-172.17.249.65:2181:8824 ] - [ INFO ]  Terminate ZkClient event thread.
+2019-06-24 17:30:49  [ DubboShutdownHook:8824 ] - [ DEBUG ]  Closing ZooKeeper connected to 172.17.249.65:2181
+2019-06-24 17:30:49  [ DubboShutdownHook:8824 ] - [ DEBUG ]  Closing session: 0x1000a0d102e0032
+2019-06-24 17:30:49  [ DubboShutdownHook:8824 ] - [ DEBUG ]  Closing client for session: 0x1000a0d102e0032
+2019-06-24 17:30:49  [ DubboZkclientConnector-SendThread(172.17.249.65:2181):8829 ] - [ DEBUG ]  Reading reply sessionid:0x1000a0d102e0032, packet:: clientPath:null serverPath:null finished:false header:: 7,-11  replyHeader:: 7,230,0  request:: null response:: null
+2019-06-24 17:30:49  [ DubboShutdownHook:8830 ] - [ DEBUG ]  Disconnecting client for session: 0x1000a0d102e0032
+2019-06-24 17:30:49  [ DubboZkclientConnector-EventThread:8931 ] - [ DEBUG ]  Received event: WatchedEvent state:Closed type:None path:null
+2019-06-24 17:30:49  [ DubboShutdownHook:8932 ] - [ INFO ]  Session: 0x1000a0d102e0032 closed
+2019-06-24 17:30:49  [ DubboShutdownHook:8932 ] - [ DEBUG ]  Closing ZkClient...done
+2019-06-24 17:30:49  [ DubboZkclientConnector-EventThread:8932 ] - [ DEBUG ]  ignoring event '{None | null}' since shutdown triggered
+2019-06-24 17:30:49  [ DubboZkclientConnector-EventThread:8933 ] - [ DEBUG ]  Leaving process event
+2019-06-24 17:30:49  [ DubboShutdownHook:8933 ] - [ INFO ]   [DUBBO] Close dubbo server: /10.0.75.1:20880, dubbo version: 2.6.6, current host: 10.0.75.1
+2019-06-24 17:30:49  [ DubboZkclientConnector-EventThread:8933 ] - [ INFO ]  EventThread shut down for session: 0x1000a0d102e0032
+2019-06-24 17:30:49  [ DubboShutdownHook:8935 ] - [ INFO ]   [DUBBO] Close NettyServer bind /0.0.0.0:20880, export /10.0.75.1:20880, dubbo version: 2.6.6, current host: 10.0.75.1
+2019-06-24 17:30:49  [ DubboShutdownHook:8938 ] - [ INFO ]   [DUBBO] Unexport service: dubbo://10.0.75.1:20880/com.report.service.service.IUserInfoService?anyhost=true&application=dubbo-b-server&bean.name=com.report.service.service.IUserInfoService&bind.ip=10.0.75.1&bind.port=20880&dubbo=2.0.2&generic=false&interface=com.report.service.service.IUserInfoService&methods=queryUserInfo,insertUserInfo,updateUserInfo,countUserInfo,deleteUserInfo&monitor=dubbo%3A%2F%2F172.17.249.65%3A2181%2Fcom.alibaba.dubbo.registry.RegistryService%3Fapplication%3Ddubbo-b-server%26client%3Dzkclient%26dubbo%3D2.0.2%26pid%3D3244%26protocol%3Dregistry%26refer%3Dapplication%253Ddubbo-b-server%2526dubbo%253D2.0.2%2526interface%253Dcom.alibaba.dubbo.monitor.MonitorService%2526pid%253D3244%2526register.ip%253D10.0.75.1%2526timestamp%253D1561368645934%26registry%3Dzookeeper%26timestamp%3D1561368645799&pid=3244&side=provider&timestamp=1561368645810, dubbo version: 2.6.6, current host: 10.0.75.1
+2019-06-24 17:30:49  [ DubboShutdownHook:8939 ] - [ INFO ]   [DUBBO] qos-server stopped., dubbo version: 2.6.6, current host: 10.0.75.1
+2019-06-24 17:30:49  [ DubboShutdownHook:8944 ] - [ INFO ]   [DUBBO] Unexport service: injvm://127.0.0.1/com.report.service.service.IUserInfoService?anyhost=true&application=dubbo-b-server&bean.name=com.report.service.service.IUserInfoService&bind.ip=10.0.75.1&bind.port=20880&dubbo=2.0.2&generic=false&interface=com.report.service.service.IUserInfoService&methods=queryUserInfo,insertUserInfo,updateUserInfo,countUserInfo,deleteUserInfo&pid=3244&side=provider&timestamp=1561368645810, dubbo version: 2.6.6, current host: 10.0.75.1
